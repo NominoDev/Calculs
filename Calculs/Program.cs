@@ -47,14 +47,15 @@ namespace Calculs
                     continue;
                 }
 
+                //choix de l'addition/multiplication
+                val1 = rand.Next(1, 10);
+                val2 = rand.Next(1, 10);
                 // traitement des choix
                 if (choix != 0)
                 {
                     if (choix == 1)
                     {
-                        // choix de l'addition
-                        val1 = rand.Next(1, 10);
-                        val2 = rand.Next(1, 10);
+                        
                         // saisie de la réponse
                         Console.Write(val1 + " + " + val2 + " = ");
                         // comparaison avec la bonne réponse
@@ -78,9 +79,6 @@ namespace Calculs
                     }
                     else if (choix == 2) // il faut vérifier le choix
                     {
-                        // choix de la multiplication
-                        val1 = rand.Next(1, 10);
-                        val2 = rand.Next(1, 10);
                         // saisie de la réponse
                         Console.Write(val1 + " x " + val2 + " = ");
                         // comparaison avec la bonne réponse
